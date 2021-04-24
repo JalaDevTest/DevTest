@@ -1,0 +1,50 @@
+###
+GET http://localhost:3000/posts
+
+###
+GET http://localhost:3000/posts/1
+
+###
+DELETE  http://localhost:3000/posts/1
+
+###
+POST http://localhost:3000/api/board
+Content-Type: application/json
+
+{    
+    "boardName":"testDay45"
+}
+
+###
+GET  https://api.trello.com/1/members/omargreyes/boards?key=34e978abaa5d55429964b9eea6308ccb&token=03b54776ef34e5946ae20265152e76c55240aa1470e4562eb914c88cb75ad8aa
+
+###
+POST https://api.trello.com/1/boards/?name=Testing2&token=03b54776ef34e5946ae20265152e76c55240aa1470e4562eb914c88cb75ad8aa&key=34e978abaa5d55429964b9eea6308ccb
+
+###
+GET https://trello.com/b/N4axhIGC/testing2
+
+###
+POST http://localhost:3000/api/list
+Content-Type: application/json
+
+{
+    "name":"lista 1",
+    "idBoard":"60837762f461954e9348aa13"
+}
+
+###
+POST http://localhost:3000/api/card
+Content-Type: application/json
+
+{
+    "name":"Card 1",
+    "idList": "6084366fd1cf284f95677d34"
+}
+
+###
+GET http://localhost:3000/api/card/608438ffbc5e8c04d7c58917
+
+###
+GET https://api.trello.com/1/cards/608438ffbc5e8c04d7c58917?key=34e978abaa5d55429964b9eea6308ccb&token=03b54776ef34e5946ae20265152e76c55240aa1470e4562eb914c88cb75ad8aa
+
